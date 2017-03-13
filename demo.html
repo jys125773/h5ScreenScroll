@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>王俊凯</title>
+	<link rel="stylesheet" href="css/wjk.css">
+	<link rel="stylesheet" href="css/swipe.css">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background-color: #3c434e;
+	}
+	.loading_page{
+	height: 100%;
+	background-color: #3c434e;
+	}
+	.loading{
+		width: 80%;
+		height: 20px;
+		background-color: #333;
+		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		border-radius: 4px;
+	}
+	.loading span{
+		display: block;
+		width: 2%;
+		height: 20px;
+		background:#2f2f2f url(images/loading.png) repeat-x;
+		background-position: 0 -10px;
+		border-radius: 4px 0 0 4px;
+		overflow: hidden;
+		animation:move 0.4s linear 0s infinite;
+		transition:all 0.2s ease 0s;
+	}
+	@-webkit-keyframes move{
+		from{
+			background-position: 0 -10px;
+		}
+		to{
+			background-position: -26px -10px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="loading_page">
+ 		<div class="loading">
+			<span></span>
+		</div>
+ 	</div>
+	<div class="box">
+		<div class="page page1">
+			<img data-src="images/p1-bg.png" class="p1-bg">
+			<img data-src="images/p1-r.png" class="p1-ren">
+			<div class="p1-mask"></div>
+			<div class="p1-arrow p1-arrow1"></div>
+			<div class="p1-arrow p1-arrow2"></div>
+			<div class="p1-arrow p1-arrow3"></div>
+			<div class="p1-arrow p1-arrow4"></div>
+			<img data-src="images/p1-line1.png" class="p1-line p1-line1">
+			<img data-src="images/p1-line2.png" class="p1-line p1-line2">
+			<dl>
+				<dt>王俊凯</dt>      
+				<dd>内地男歌手 |</dd>
+				<dd>演员 |</dd>
+				<dd>TFBOYS队长</dd>
+			</dl>
+		</div>
+		<div class="page page2">
+			<img data-src="images/p2-bg.png" class="p2-bg">
+			<img data-src="images/p2-r.png" class="p2-r">
+			<img data-src="images/p2-mask.png" class="p2-mask">
+			<img data-src="images/p2-line1.png" class="p2-line p2-line1">
+			<img data-src="images/p2-line2.png" class="p2-line p2-line2">
+			<dl>
+				<dt>简介</dt>
+				<dd><b>姓名:</b><span>王俊凯</span></dd>
+				<dd><b>英文名:</b><span>Karry</span></dd>
+				<dd><b>个人信息:</b><span>1999.9.21|处女座|O型</span></dd>
+				<dd><b>代表作品:</b><span>长城、样、青春修炼手册</span></dd>
+				<dd><b>粉丝名称:</b><span>小螃蟹</span></dd>
+				<dd><b>个人应援色:</b><span>蓝色</span></dd>
+			</dl>
+		</div>
+		<div class="page page3">
+			<img data-src="images/p3-time1.jpg" class="p3-time p3-time1">
+			<img data-src="images/p3-time2.png" class="p3-time p3-time2">
+			<img data-src="images/p3-time3.png" class="p3-time p3-time3">
+		</div>
+		<div class="page page4">
+			<div class="swipe"></div>
+			<h2 class="p4-title">精彩图片</h2>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/touchSwipe.js"></script>
+	<script type="text/javascript" src="js/ggp.js"></script>
+	<script type="text/javascript">
+	var manager = new Manager();
+	</script>
+</body>
+</html>
+
